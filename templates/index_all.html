@@ -1,0 +1,15 @@
+<html>
+    <head>
+        {% if title %}
+        <title>{{ title }} - Profile</title>
+        {% else %}
+        <title>Welcome to Portfolio Managment System</title>
+        {% endif %}
+    </head>
+    <body>
+        <h1>Hi, {{ user.username }}!</h1>
+        {% for profile in profiles %}
+        <div><p>{{ profile.name.username }} says: <b>{{ profile.linkdin }}</b></p></div>
+        {% endfor %}
+    </body>
+</html>
